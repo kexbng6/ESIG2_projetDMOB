@@ -5,4 +5,10 @@
     <string name="title_notifications">Notifications</string>
     <string name="rejoignez_notre_portail_mobile">Rejoignez notre portail mobile</string>
     <string name="cr_er_un_nouveau_compte">Créer un nouveau compte</string>
+    <string name="votre_adresse_mail">votre adresse mail</string>
+    <string name="pr_nom">prénom</string>
+    <string name="nom">nom</string>
+    <string name="cr_er_un_compte">Créer un compte</string>
+    <string name="vous_avez_d_j_un_compte">Vous avez déjà un compte ?</string>
+    <string name="mot_de_passe">mot de passe</string>
 </resources>
