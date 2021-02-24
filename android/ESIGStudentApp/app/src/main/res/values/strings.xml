@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ESIGStudentApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="rejoignez_notre_portail_mobile">Rejoignez notre portail mobile</string>
+    <string name="cr_er_un_nouveau_compte">Créer un nouveau compte</string>
+</resources>
