@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "590152074182",
+    "project_id": "esigstudentapp",
+    "storage_bucket": "esigstudentapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590152074182:android:a5162f0565acfd387be8c7",
+        "android_client_info": {
+          "package_name": "com.example.esigstudentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590152074182-rj5dbcla0msfnqnetassfmim225llha4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQSHWIwcbHK05WulcKFhioDgMxViJllvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590152074182-rj5dbcla0msfnqnetassfmim225llha4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
