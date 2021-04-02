@@ -11,4 +11,8 @@
     <string name="cr_er_un_compte">Créer un compte</string>
     <string name="vous_avez_d_j_un_compte">Vous avez déjà un compte ?</string>
     <string name="mot_de_passe">mot de passe</string>
+    <string name="se_d_connecter">se déconnecter</string>
+    <string name="se_connecter">se connecter</string>
+    <string name="se_connecter_au_portail_de_l_esig">Se connecter au portail de l\'ESIG</string>
+    <string name="pas_encore_inscrit">pas encore inscrit ?</string>
 </resources>
