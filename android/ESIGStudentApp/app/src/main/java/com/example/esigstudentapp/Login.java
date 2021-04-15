@@ -36,7 +36,6 @@ public class Login extends AppCompatActivity {
         loginBtn = findViewById(R.id.loginBtn);
         fAuth = FirebaseAuth.getInstance();
 
-
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,7 +74,6 @@ public class Login extends AppCompatActivity {
         });
 
         createTxt.setOnClickListener(new View.OnClickListener(){
-
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Signup.class));
