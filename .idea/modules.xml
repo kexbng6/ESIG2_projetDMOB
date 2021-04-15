@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DMOB.iml" filepath="$PROJECT_DIR$/.idea/DMOB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ESIG_App.iml" filepath="$PROJECT_DIR$/.idea/ESIG_App.iml" />
     </modules>
   </component>
 </project>
+<!-- <module fileurl="file://$PROJECT_DIR$/.idea/DMOB.iml" filepath="$PROJECT_DIR$/.idea/DMOB.iml" /> -->
