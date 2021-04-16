@@ -3,26 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#523F51B5"
     android:orientation="vertical"
     tools:context=".Bulletin">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RecyclerView"
-        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Mon bulletin"
         android:textColor="@color/black"
         android:textSize="25sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/reclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@id/reclerview"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="#2D00BCD4"
+        android:clipToPadding="false" />
 
-    </LinearLayout>
+</LinearLayout>
     <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
     <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
     <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
