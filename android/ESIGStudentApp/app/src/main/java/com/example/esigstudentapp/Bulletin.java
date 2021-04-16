@@ -37,7 +37,7 @@ public class Bulletin extends AppCompatActivity {
         mFirestoreList = findViewById(R.id.reclerview);
 
         //Query
-        Query query = firebaseFirestore.collection(userId);//Query query = firebaseFirestore.collection("Module");
+        Query query = firebaseFirestore.collection("Module");//Query query = firebaseFirestore.collection(userId);
         //RecycleOptions
         FirestoreRecyclerOptions<Module> options = new FirestoreRecyclerOptions.Builder<Module>().setQuery(query, Module.class).build();
 
@@ -51,7 +51,7 @@ public class Bulletin extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(@NonNull ModuleViewHolder holder, int position, @NonNull Module model) {
-                holder.listName.setText(model.getNomCours());
+                holder.listName.setText(model.getCours());
                 holder.listName.setText(model.getNote() + "");
             }
         };
@@ -73,7 +73,6 @@ public class Bulletin extends AppCompatActivity {
             listName = itemView.findViewById(R.id.list_name);
             listNote = itemView.findViewById(R.id.list_note);
         }
-
     }
 
     @Override

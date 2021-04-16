@@ -32,7 +32,7 @@ public class Login extends AppCompatActivity {
         EmailLogin = findViewById(R.id.EmailLogin);
         passwordLogin = findViewById(R.id.passwordLogin);
         progressBarLogin = findViewById(R.id.progressBar2);
-        createTxt = findViewById(R.id.loginTxt);
+        createTxt = findViewById(R.id.txtPasInscrit);
         loginBtn = findViewById(R.id.loginBtn);
         fAuth = FirebaseAuth.getInstance();
 
@@ -61,7 +61,7 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(Login.this, "Bienvenu, vous êtes connecté !", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "Bienvenue, vous êtes connecté !", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }
                         else{

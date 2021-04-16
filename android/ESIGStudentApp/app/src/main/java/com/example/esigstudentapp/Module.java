@@ -1,11 +1,11 @@
 package com.example.esigstudentapp;
 
 public class Module {
-    private String nomCours;
+    private String cours;
     private double note;
 
     private Module(String nomCours, double note){
-        this.nomCours = nomCours;
+        this.cours = nomCours;
         this.note = note;
     }
 
@@ -13,12 +13,12 @@ public class Module {
 
     }
 
-    public String getNomCours() {
-        return nomCours;
+    public String getCours() {
+        return cours;
     }
 
-    public void setNomCours(String nomCours) {
-        this.nomCours = nomCours;
+    public void setCours(String cours) {
+        this.cours = cours;
     }
 
     public double getNote() {

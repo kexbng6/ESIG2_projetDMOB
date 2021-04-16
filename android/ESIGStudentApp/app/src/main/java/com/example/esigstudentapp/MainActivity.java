@@ -16,7 +16,7 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button bulletinBtn;
+    Button bulletinBtn, horaireBtn, calendrierBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bulletinBtn = findViewById(R.id.bulletinBtn);
+        horaireBtn = findViewById(R.id.horaireBtn);
+        calendrierBtn = findViewById(R.id.calendrierBtn);
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -38,6 +41,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Bulletin.class));
+            }
+        });
+
+        horaireBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Horaire.class));
+            }
+        });
+
+        calendrierBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Calendrier.class));
             }
         });
 

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+tools:context=".Calendrier"
+android:orientation="horizontal">
+
+<CalendarView
+    android:id="@+id/calendarView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginStart="20dp" />
+
+
+    <EditText
+        android:id="@+id/edit_cours"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/calendarView2"
+        android:ems="10"
+        android:hint="@string/cours"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btncalendrier"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ajouter_examen" />
+
+    <EditText
+        android:id="@+id/edit_salle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/calendarView2"
+        android:ems="10"
+        android:hint="@string/salle"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_type"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/edit_heure"
+        android:ems="10"
+        android:hint="@string/type_d_examen"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_heure"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_cours"
+        android:ems="10"
+        android:hint="@string/heure_de_d_but"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000"
+        android:textSize="16sp" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="575dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_app" />
+
+</RelativeLayout>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".Calendrier">-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--<com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--android:id="@+id/menu"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="#FFFFFF"-->
+<!--android:layout_marginTop="605dp"-->
+<!--app:layout_constraintBottom_toBottomOf="parent"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:menu="@menu/liberer_menu" >-->
+
+<!--</com.google.android.material.bottomnavigation.BottomNavigationView>-->

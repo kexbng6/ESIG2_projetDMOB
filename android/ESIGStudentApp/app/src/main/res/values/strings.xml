@@ -15,4 +15,9 @@
     <string name="se_connecter">se connecter</string>
     <string name="se_connecter_au_portail_de_l_esig">Se connecter au portail de l\'ESIG</string>
     <string name="pas_encore_inscrit">pas encore inscrit ?</string>
+    <string name="heure_de_d_but">Heure de début</string>
+    <string name="type_d_examen">Type d\'examen</string>
+    <string name="salle">Salle</string>
+    <string name="ajouter_examen">Ajouter examen</string>
+    <string name="cours">Cours</string>
 </resources>

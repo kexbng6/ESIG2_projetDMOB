@@ -11,9 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ESIGStudentApp">
-        <activity android:name=".Bulletin"></activity>
+        <activity android:name=".Calendrier"></activity>
+        <activity android:name=".Bulletin" />
         <activity android:name=".Profil" />
         <activity android:name=".Login" />
+        <activity android:name=".Horaire" />
         <activity android:name=".Signup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
