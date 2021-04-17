@@ -20,4 +20,7 @@
     <string name="salle">Salle</string>
     <string name="ajouter_examen">Ajouter examen</string>
     <string name="cours">Cours</string>
+    <string name="bulletin">Bulletin</string>
+    <string name="calendrier">Calendrier</string>
+    <string name="horaire">Horaire</string>
 </resources>

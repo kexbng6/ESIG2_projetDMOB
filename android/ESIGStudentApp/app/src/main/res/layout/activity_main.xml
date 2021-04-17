@@ -35,16 +35,18 @@
 
     <Button
         android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="126dp"
+        android:layout_height="43dp"
         android:onClick="logout"
         android:text="@string/se_d_connecter"
+        android:textSize="10sp"
+        app:iconTint="#E91E63"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
-        app:layout_constraintVertical_bias="0.914" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/calendrierBtn"

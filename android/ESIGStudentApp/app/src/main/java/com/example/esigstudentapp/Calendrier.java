@@ -39,12 +39,14 @@ public class Calendrier extends AppCompatActivity {
         navBottom.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                firebaseAuth = FirebaseAuth.getInstance();
                 switch (menuItem.getItemId()){
-                    case R.id.new_game:
+                    case R.id.bulletin:
+                        startActivity(new Intent(Calendrier.this, Bulletin.class));
+                        break;
+                    case R.id.calendrier:
                         startActivity(new Intent(Calendrier.this, Calendrier.class));
                         break;
-                    case R.id.help:
+                    case R.id.horaire:
                         startActivity(new Intent(Calendrier.this, Horaire.class));
                         break;
                 }
