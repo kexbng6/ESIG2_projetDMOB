@@ -3,6 +3,10 @@
     package="com.example.esigstudentapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +15,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ESIGStudentApp">
+        <activity android:name=".Lignes_TPG"></activity>
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBYEtUf4GIc1RRsR7yMaI_g43n7292YFjM" />
+
         <activity android:name=".TPG"></activity>
         <activity android:name=".Calendrier" />
         <activity android:name=".Bulletin" />

@@ -35,11 +35,11 @@
 
     <Button
         android:id="@+id/btnLogout"
-        android:layout_width="126dp"
-        android:layout_height="43dp"
+        android:layout_width="167dp"
+        android:layout_height="51dp"
         android:onClick="logout"
         android:text="@string/se_d_connecter"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:iconTint="#E91E63"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,39 +49,28 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/calendrierBtn"
+        android:id="@+id/tpgBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calendrier"
+        android:background="@color/teal_700"
+        android:text="@string/tpg"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
-        app:layout_constraintVertical_bias="0.367" />
+        app:layout_constraintVertical_bias="0.87" />
 
-    <Button
-        android:id="@+id/bulletinBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bulletin"
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="309dp"
+        android:layout_height="305dp"
+        android:text="@string/bienvenue_sur_le_portail_mobile_de_l_esig_vous_retrouverez_l_ensemble_de_vos_informations_utiles_sur_cette_application_pour_vos_tudes_l_ecole_sup_rieure_d_informatique_de_gestion"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
-        app:layout_constraintVertical_bias="0.063" />
-
-    <Button
-        android:id="@+id/horaireBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Horaire"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-        app:layout_constraintHorizontal_bias="0.115"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bulletinBtn"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.498" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

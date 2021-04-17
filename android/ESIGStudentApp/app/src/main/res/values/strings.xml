@@ -23,4 +23,12 @@
     <string name="bulletin">Bulletin</string>
     <string name="calendrier">Calendrier</string>
     <string name="horaire">Horaire</string>
+    <string name="horaires">Horaires</string>
+    <string name="imagehoraire">imageHoraire</string>
+    <string name="accueil">Accueil</string>
+    <string name="tpg">TPG</string>
+    <string name="bienvenue_sur_le_portail_mobile_de_l_esig_vous_retrouverez_l_ensemble_de_vos_informations_utiles_sur_cette_application_pour_vos_tudes_l_ecole_sup_rieure_d_informatique_de_gestion">Bienvenue sur le portail mobile de l\'ESIG. Vous retrouverez l\'ensemble de vos informations utiles sur cette application pour vos études à l\'Ecole supérieure d\'informatique de gestion =)</string>
+    <string name="cliquez_au_milieu_pour_ajouter_votre_horaire">Cliquez au milieu pour ajouter votre horaire</string>
+    <string name="image_horaire">image_Horaire</string>
+    <string name="mon_bulletin">Mon bulletin</string>
 </resources>

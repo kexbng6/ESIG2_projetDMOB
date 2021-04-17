@@ -5,19 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0363F4"
-    android:contentDescription="image_Horaire"
+    android:contentDescription="@string/image_horaire"
     android:hapticFeedbackEnabled="true"
     tools:context=".Horaire">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/menu_bottom_app" />
+
     <ImageView
         android:id="@+id/horaireImg"
-        android:layout_width="305dp"
-        android:layout_height="541dp"
+        android:layout_width="294dp"
+        android:layout_height="466dp"
         android:background="#F4F3F3"
-        android:contentDescription="imageHoraire"
+        android:contentDescription="@string/imagehoraire"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.705"
@@ -27,7 +38,7 @@
         android:id="@+id/textView2"
         android:layout_width="269dp"
         android:layout_height="57dp"
-        android:text="Cliquez au milieu pour ajouter votre horaire"
+        android:text="@string/cliquez_au_milieu_pour_ajouter_votre_horaire"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -35,5 +46,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.636" />
 </androidx.constraintlayout.widget.ConstraintLayout>
