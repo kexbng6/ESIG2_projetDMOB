@@ -15,14 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ESIGStudentApp">
-        <activity android:name=".Lignes_TPG"></activity>
-
+        <activity android:name=".ESIG_web"></activity>
+        <activity android:name=".Lignes_TPG" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBYEtUf4GIc1RRsR7yMaI_g43n7292YFjM" />
 
-        <activity android:name=".TPG"></activity>
+        <activity android:name=".TPG" />
         <activity android:name=".Calendrier" />
         <activity android:name=".Bulletin" />
         <activity android:name=".Profil" />

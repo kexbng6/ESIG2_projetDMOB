@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -33,13 +34,14 @@ public class Horaire extends AppCompatActivity {
     public Uri imageUri;
     private FirebaseStorage storage;
     private StorageReference storageReference;
+    ImageButton homeBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horaire);
 
-        BottomNavigationView navBottom = findViewById(R.id.menu);
+        BottomNavigationView navBottom = findViewById(R.id.nav_view);
         navBottom.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -58,10 +60,16 @@ public class Horaire extends AppCompatActivity {
             }
         });
 
+        homeBtn = findViewById(R.id.homeBtn);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
+
         horaire = findViewById(R.id.horaireImg);
-
         storage = FirebaseStorage.getInstance();
-
         horaire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,10 +83,7 @@ public class Horaire extends AppCompatActivity {
                 startActivityForResult(intent, 1);
             }
         });
-
-
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -91,7 +96,6 @@ public class Horaire extends AppCompatActivity {
     }
 
     private void uploadPicture() {
-
         final ProgressDialog pd = new ProgressDialog(this);
         pd.setTitle("Téléchargement en cours...");
         pd.show();
@@ -121,15 +125,5 @@ public class Horaire extends AppCompatActivity {
                 }
         });
 
-//        // Create a reference to "mountains.jpg"
-//        StorageReference mountainsRef = storageRef.child("mountains.jpg");
-//
-//// Create a reference to 'images/mountains.jpg'
-//        StorageReference mountainImagesRef = storageRef.child("images/mountains.jpg");
-//
-//// While the file names are the same, the references point to different files
-//        mountainsRef.getName().equals(mountainImagesRef.getName());    // true
-//        mountainsRef.getPath().equals(mountainImagesRef.getPath());    // false
     }
-
 }

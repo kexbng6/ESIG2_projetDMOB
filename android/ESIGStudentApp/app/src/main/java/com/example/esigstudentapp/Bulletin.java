@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
@@ -25,7 +26,7 @@ public class Bulletin extends AppCompatActivity {
     private FirebaseFirestore firebaseFirestore;
     private RecyclerView mFirestoreList;
     FirebaseAuth fAuth;
-
+    ImageButton homeBtn;
 
     private FirestoreRecyclerAdapter adapter;
 
@@ -34,7 +35,7 @@ public class Bulletin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bulletin);
 
-        BottomNavigationView navBottom = findViewById(R.id.menu);
+        BottomNavigationView navBottom = findViewById(R.id.nav_view );
         navBottom.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -50,6 +51,14 @@ public class Bulletin extends AppCompatActivity {
                         break;
                 }
                 return true;
+            }
+        });
+
+        homeBtn = findViewById(R.id.homeBtn);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
 
@@ -74,7 +83,7 @@ public class Bulletin extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull ModuleViewHolder holder, int position, @NonNull Module model) {
                 holder.listName.setText(model.getCours());
-                holder.listName.setText(model.getNote() + "");
+                holder.listNote.setText(model.getNote() + "");
             }
         };
 

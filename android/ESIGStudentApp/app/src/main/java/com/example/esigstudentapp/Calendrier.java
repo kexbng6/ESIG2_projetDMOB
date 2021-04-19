@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -27,6 +28,7 @@ import java.util.Map;
 
 public class Calendrier extends AppCompatActivity {
     String cours, date, salle, type, heure;
+    ImageButton homeBtn, infoBtn;
     FirebaseAuth firebaseAuth;
     EditText editCours, editSalle, editType, editHeure;
 
@@ -35,7 +37,7 @@ public class Calendrier extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendrier);
 
-        BottomNavigationView navBottom = findViewById(R.id.menu);
+        BottomNavigationView navBottom = findViewById(R.id.nav_view);
         navBottom.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -53,28 +55,40 @@ public class Calendrier extends AppCompatActivity {
                 return true;
             }
         });
+        homeBtn = findViewById(R.id.homeBtn);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
+
+        infoBtn = findViewById(R.id.infoBtn);
+        infoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Calendrier.this, "Veillez à selectionner une date avant d'ajouter un examen", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         editCours = findViewById(R.id.edit_cours);
         editSalle = findViewById(R.id.edit_salle);
         editType = findViewById(R.id.edit_type);
         editHeure = findViewById(R.id.edit_heure);
 
-        Button btncalendrier =findViewById(R.id.btncalendrier);
-        CalendarView calendar =findViewById(R.id.calendarView2);
+        Button btncalendrier = findViewById(R.id.btncalendrier);
+        CalendarView calendar = findViewById(R.id.calendarView2);
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-                date= year +"/"+month+"/"+dayOfMonth;
+                date= year +"/"+(month+1)+"/"+dayOfMonth;
                 Toast.makeText(Calendrier.this,date,Toast.LENGTH_SHORT).show();
-
             }
         });
 
         btncalendrier.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //GoogleSignInAccount acct= GoogleSignIn.getLastSignedInAccount(getBaseContext());
-                //String email=acct.getEmail();
                 String email="abc@gmail.com";
                 Intent intent=new Intent(Intent.ACTION_INSERT);
                 intent.setData(CalendarContract.Events.CONTENT_URI);
@@ -87,7 +101,6 @@ public class Calendrier extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else {
-
                 }
                 FirebaseFirestore mFireStore=FirebaseFirestore.getInstance();
                 cours = editCours.getText().toString();
@@ -106,7 +119,6 @@ public class Calendrier extends AppCompatActivity {
                     // Name, email address, and profile photo Url
                     String name = user.getDisplayName();
                     email = user.getEmail();
-
 
                     // Check if user's email is verified
                     boolean emailVerified = user.isEmailVerified();
@@ -136,7 +148,6 @@ public class Calendrier extends AppCompatActivity {
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(Calendrier.this, "Examen ajouté avec succès", Toast.LENGTH_LONG).show();
                         finish();
-                        //startActivity(new Intent(calendrier.this, ListeHoraire_prof.class));
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

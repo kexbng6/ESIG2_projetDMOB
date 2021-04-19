@@ -52,6 +52,7 @@
         android:layout_width="237dp"
         android:layout_height="48dp"
         android:layout_marginTop="136dp"
+        android:backgroundTint="#4CAF50"
         android:text="@string/se_connecter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

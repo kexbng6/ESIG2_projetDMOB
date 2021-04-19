@@ -10,6 +10,7 @@
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#DC0808"
         android:onClick="logout"
         android:text="@string/se_d_connecter"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,45 +20,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075" />
 
-    <EditText
-        android:id="@+id/editEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/nomTxt"
+        android:layout_width="216dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="152dp"
+        android:text=""
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
+        app:layout_constraintTop_toBottomOf="@+id/prenomTxt" />
 
-    <EditText
-        android:id="@+id/userFirstNameTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/userNameTxt"
+    <TextView
+        android:id="@+id/prenomTxt"
+        android:layout_width="216dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="188dp"
+        android:text=""
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/userNameTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editEmailAddress"
+    <TextView
+        android:id="@+id/emailTxt"
+        android:layout_width="216dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="148dp"
+        android:text=""
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896" />
+        app:layout_constraintTop_toBottomOf="@+id/nomTxt" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

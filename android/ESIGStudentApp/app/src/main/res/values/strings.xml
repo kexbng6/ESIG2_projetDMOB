@@ -31,4 +31,19 @@
     <string name="cliquez_au_milieu_pour_ajouter_votre_horaire">Cliquez au milieu pour ajouter votre horaire</string>
     <string name="image_horaire">image_Horaire</string>
     <string name="mon_bulletin">Mon bulletin</string>
+    <string name="ajouterExa">+</string>
+    <string name="information">information</string>
+    <string name="_17">17</string>
+    <string name="grange_canal">Grange-Canal :</string>
+    <string name="_1">1</string>
+    <string name="_9">9</string>
+    <string name="arr_t_de_bus_proximit">Arrêt de bus à proximité</string>
+    <string name="_33">33</string>
+    <string name="_12">12</string>
+    <string name="gradelle">Gradelle :</string>
+    <string name="esig_com">esig.com</string>
+    <string name="profile">profile</string>
+    <string name="mon_profil">Mon profil</string>
+    <string name="bienvenue_sur_le_portail_mobile_esig_student_app_vous_retrouverez_toutes_les_informations_utiles_pour_vos_tudes_ecole_sup_rieure_informatique_de_gestion">Bienvenue sur le portail mobile ESIG Student App. Vous retrouverez toutes les informations utiles pour vos études à Ecole supérieure informatique de gestion</string>
+    <string name="esig_ch">esig.ch</string>
 </resources>
