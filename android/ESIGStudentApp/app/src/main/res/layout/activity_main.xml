@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A0E1FF"
+    android:background="@drawable/background_esig_app"
     android:paddingTop="?attr/actionBarSize">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -24,7 +24,7 @@
         android:id="@+id/btnLogout"
         android:layout_width="151dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#FF0335"
         android:onClick="logout"
         android:text="@string/se_d_connecter"
@@ -32,20 +32,20 @@
         app:iconTint="#E91E63"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/tpgBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="420dp"
+        android:layout_marginBottom="472dp"
         android:background="#F44336"
         android:backgroundTint="#F44336"
         android:text="@string/tpg"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintHorizontal_bias="0.891"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
@@ -56,21 +56,22 @@
         android:contentDescription="@string/profile"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="69dp"
         android:layout_height="20dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="76dp"
         android:text="@string/mon_profil"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -78,13 +79,13 @@
         android:id="@+id/esigWebBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="492dp"
+        android:layout_marginBottom="408dp"
         android:background="#2196F3"
         android:backgroundTint="#2196F3"
         android:text="@string/esig_ch"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -93,7 +94,7 @@
         android:layout_height="197dp"
         android:layout_marginBottom="160dp"
         android:text="@string/bienvenue_sur_le_portail_mobile_esig_student_app_vous_retrouverez_toutes_les_informations_utiles_pour_vos_tudes_ecole_sup_rieure_informatique_de_gestion"
-        android:textColor="#333333"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"

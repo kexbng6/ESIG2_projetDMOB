@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_esig_simple"
     tools:context=".Profil">
 
     <Button
@@ -15,20 +16,21 @@
         android:text="@string/se_d_connecter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintHorizontal_bias="0.934"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
+        app:layout_constraintVertical_bias="0.213" />
 
     <TextView
         android:id="@+id/nomTxt"
         android:layout_width="216dp"
         android:layout_height="46dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="104dp"
         android:text=""
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.241"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prenomTxt" />
 
@@ -36,11 +38,12 @@
         android:id="@+id/prenomTxt"
         android:layout_width="216dp"
         android:layout_height="46dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="284dp"
         android:text=""
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.241"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,11 +51,12 @@
         android:id="@+id/emailTxt"
         android:layout_width="216dp"
         android:layout_height="46dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="108dp"
         android:text=""
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.241"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomTxt" />
 

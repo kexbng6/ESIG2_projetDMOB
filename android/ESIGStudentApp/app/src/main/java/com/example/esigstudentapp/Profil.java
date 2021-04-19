@@ -35,9 +35,9 @@ public class Profil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
 
-        prenom.findViewById(R.id.prenomTxt);
-        nom.findViewById(R.id.nomTxt);
-        email.findViewById(R.id.emailTxt);
+        prenom = findViewById(R.id.prenomTxt);
+        nom = findViewById(R.id.nomTxt);
+        email = findViewById(R.id.emailTxt);
 
 
         fAuth = FirebaseAuth.getInstance();
